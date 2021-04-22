@@ -1,8 +1,31 @@
-.advantages__title {
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 1.13;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
+.advantages {
+  .advantages__item--first-icon::before {
+    content: url(../images/advantages/adv-icon1.png);
+    display: block;
+  }
+  .advantages__item--second-icon {
+    content: url(../images/advantages/adv-icon2.png);
+    display: block;
+  }
+  .advantages__item--third-icon {
+    content: url(../images/advantages/adv-icon3.png);
+    display: block;
+  }
+  .advantages__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+  .advantages__text {
+    font-family: $accent-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+
+    color: #000000;
+  }
 }
