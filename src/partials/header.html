@@ -1,7 +1,14 @@
 <header class="page-header">
   <div class="container">
-    <a href="#" class="page__logo">
-      <img src="" alt="Logo" class="logo__image">
+    <a href="#" class="page__logo" aria-label="logo">
+      <img
+      class="logo__image"
+      srcset="images/hero-header/logo@1x.png 1x, 
+      images/hero-header/logo@2x.png 2x" 
+      src="images/hero-header/logo@1x.png" 
+      alt="Logo"
+      width="199"
+      height="50">
     </a>
     <div class="menu">
       <nav class="page__nav">
@@ -13,11 +20,11 @@
           <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
         </ul>
       </nav>
-      <button class="close__icon" type="button">for close icon</button>
+      <button class="close__btn" type="button" aria-label="clickk to close mobile menu">for close icon</button>
     </div>
     <div class="burger">
-      <button class="menu__btn" type="button">for burger button</button>
+      <button class="menu__btn" type="button" aria-label="clickk to open mobile menu">for burger button</button>
     </div>
-    <button class="btn main__btn header__btn" type="button">Buy now ></button>
+    <button class="btn btn--main header__btn" type="button">Buy now ></button>
   </div>
 </header>
