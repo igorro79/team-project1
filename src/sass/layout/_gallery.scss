@@ -6,3 +6,43 @@
     $primary-bgc 100%
   );
 }
+
+.gallery__descktop {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  max-width: 1040px;
+  height: 430px;
+  columns: 6 auto;
+  column-gap: auto;
+
+  margin: 0 auto;
+}
+
+.gallery__mobile {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.gallery__thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 285px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  height: 100%;
+}
+
+.gallery__image {
+  &:last-child {
+    margin-top: 10px;
+  }
+  display: inline-block;
+}
+
+.gallery__image--bigger {
+  width: 285px;
+}
