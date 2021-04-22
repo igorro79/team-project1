@@ -91,6 +91,15 @@ ul {
   color: #d41443;
 }
 
+.advantages__title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
 .gallery {
   background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 40%, #fff 100%);
 >>>>>>> Stashed changes
