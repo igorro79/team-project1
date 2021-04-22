@@ -5,7 +5,8 @@
         "main.scss",
         "_example.scss",
         "_header.scss",
-        "_kruktest.scss"
+        "_kruktest.scss",
+        "_reviews.scss"
     ],
     "names": [],
     "file": "main.css"
