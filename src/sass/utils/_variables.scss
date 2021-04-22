@@ -1,3 +1,22 @@
+// Палитра цветов на сайте
+$default-text-color: #000;
+$primary-text-color: #fff;
+$secondary-text-color: #907e82;
+
+$primary-accent-color: #ffb8ca;
+$secondary-accent-color: #d41443;
+$third-accent-color: #ffa5ba;
+
+$primary-bgc: #e5e5e5;
+$secondary-bgc: #fff5f6;
+
+$primary-hover-bgc: #ecebeb;
+$secondary-hover-bgc: #d41342;
+
+$line-color: #e1e1e1;
+
+// мискины для текста
+
 @mixin font($fs: 16px, $fw: 500, $lh: 1.76) {
   font-size: $fs;
   font-weight: $fw;
