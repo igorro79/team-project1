@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @charset "UTF-8";
 /*
  * Главный файл стилей.
@@ -10,6 +11,19 @@
   color: #424242;
   max-width: 960px;
   padding: 16px;
+=======
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+>>>>>>> Stashed changes
 }
 
 .example code {
@@ -62,9 +76,23 @@ ul {
   text-align: center;
 }
 
+<<<<<<< Updated upstream
 .test li {
   height: 300px;
   background: #3e3e3e;
   color: #fff;
+=======
+.advantages__title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.gallery {
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 40%, #fff 100%);
+>>>>>>> Stashed changes
 }
 /*# sourceMappingURL=main.css.map */
