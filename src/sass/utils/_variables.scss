@@ -1,4 +1,8 @@
-// Палитра цветов на сайте
+// ============ переменные для шрифтов
+$primary-font: DM Sans;
+$accent-font: Titan One;
+
+// ============ Палитра цветов на сайте
 $default-text-color: #000;
 $primary-text-color: #fff;
 $secondary-text-color: #907e82;
@@ -7,16 +11,25 @@ $primary-accent-color: #ffb8ca;
 $secondary-accent-color: #d41443;
 $third-accent-color: #ffa5ba;
 
-$primary-bgc: #e5e5e5;
+$primary-bgc: #fff;
 $secondary-bgc: #fff5f6;
 
 $primary-hover-bgc: #ecebeb;
 $secondary-hover-bgc: #d41342;
 
-$line-color: #e1e1e1;
+$page-line-color: #e1e1e1;
+
+$mobile-menu-line-color: #e18298;
+$mobile-menu-bgc: #e17992;
+
+$product-one-color: #f0d1a5;
+$product-two-color: #c2e297;
+
+$unknown: #d31342;
+$unknown2: #d9d9d9;
+$unknown3: #fafafa;
 
 // мискины для текста
-
 @mixin font($fs: 16px, $fw: 500, $lh: 1.76) {
   font-size: $fs;
   font-weight: $fw;
