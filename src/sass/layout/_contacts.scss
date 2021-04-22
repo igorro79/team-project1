@@ -1,0 +1,115 @@
+.contacts-container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .contacts-container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .contacts-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-container {
+    width: 1280px;
+  }
+}
+.contacts__list {
+  margin: 0 auto;
+}
+.contacts__list-card {
+  width: 220px;
+  padding-left: 20px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  padding-right: 20px;
+  height: 427px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  &:not(&:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.contacts__list-button {
+  min-width: 80px;
+  background: $product-one-color;
+  border-radius: 4px;
+  border-color: transparent;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $primary-text-color;
+  margin-bottom: 25px;
+}
+.truck {
+  background: $product-two-color;
+  min-width: 130px;
+}
+.location__city-name {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: $default-text-color;
+  margin-bottom: 10px;
+}
+.location__city-name-discription {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $secondary-text-color;
+}
+.location,
+.work {
+  position: relative;
+  margin-bottom: 50px;
+  &::after {
+    top: 95px;
+    left: 0;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $page-line-color;
+  }
+}
+
+.work__day {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $default-text-color;
+}
+.work__time {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $third-accent-color;
+}
+.contacts-list {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $secondary-text-color;
+  text-decoration: none;
+}
