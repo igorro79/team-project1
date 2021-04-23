@@ -14,19 +14,45 @@
 }
 
 //for mobile
+.header__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: hsla(345, 100%, 86%, 0.6);
+  opacity: 0;
+  pointer-events: none;
+
+  .page-header.menu-open & {
+    opacity: 1;
+    pointer-events: initial;
+    overflow: scroll;
+  }
+}
 
 .menu {
   position: absolute;
+  overflow: hidden;
   top: 0%;
   right: 0;
   margin: 0;
   padding-top: 23px;
+  padding-bottom: 23px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: $mobile-menu-bgc;
+  opacity: 0;
   transform: translateX(100%);
+  transition: transform 250ms linear;
+
+  .page-header.menu-open & {
+    opacity: 1;
+    transform: translateX(0);
+    overflow: visible;
+  }
 }
 
 .menu__btn {
