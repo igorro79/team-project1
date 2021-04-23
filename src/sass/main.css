@@ -54,6 +54,89 @@ img {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .about {
+    padding-top: 125px;
+    padding-bottom: 39px;
+    background-color: #fff5f6;
+    position: relative;
+  }
+  .about__label {
+    font-family: Titan One;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    margin: auto;
+  }
+  .about__title {
+    font-family: Titan One;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    margin: 15px auto 26px;
+  }
+  .about__image {
+    padding: 0 10px;
+    margin: auto;
+  }
+  .about__description-begin {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: #000;
+    margin: 46px 50px;
+  }
+  .about__description,
+  .about__description-end {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: #907e82;
+    position: relative;
+    z-index: 5;
+    margin: 0 50px;
+  }
+  .about__description-end {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .about__background-image {
+    position: absolute;
+    top: 80%;
+    left: 0;
+  }
+  .about__button {
+    border-radius: 22px;
+    background-color: #fff;
+    color: #d41443;
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.29;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 10px 37px;
+    margin: 0 auto;
+    border: none;
+    width: 176px;
+    height: 44px;
+  }
+}
+
 .advantages__title {
   font-weight: normal;
   font-size: 36px;
