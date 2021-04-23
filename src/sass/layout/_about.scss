@@ -4,6 +4,7 @@
     padding-bottom: 39px;
     background-color: $secondary-bgc;
     position: relative;
+    background-image: url('images/about/mobile-bg.png');
   }
 
   .about__label {
@@ -60,11 +61,11 @@
     margin-bottom: 25px;
   }
 
-  .about__background-image {
-    position: absolute;
-    top: 80%;
-    left: 0;
-  }
+  // .about__background-image {
+  //   position: absolute;
+  //   top: 80%;
+  //   left: 0;
+  // }
 
   .about__button {
     border-radius: 22px;
@@ -80,7 +81,7 @@
     padding: 10px 37px;
     margin: 0 auto;
     border: none;
-    width: 176px;
+    min-width: 176px;
     height: 44px;
   }
 }
