@@ -2,6 +2,10 @@
   background: $secondary-bgc;
   padding-top: 44px;
   padding-bottom: 66px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -20,9 +24,12 @@
   }
 }
 .contacts__list {
+  display: block;
   margin: 0 auto;
 }
 .contacts__list-card {
+  display: block;
+  margin: 0 auto;
   padding-left: 20px;
   padding-top: 42px;
   padding-bottom: 42px;
@@ -121,7 +128,9 @@
   margin-top: 54px;
 }
 .contacts-button-set__but {
+  display: block;
   margin: 0 auto;
+  cursor: pointer;
   padding: 8px 20px 8px 20px;
   font-family: $primary-font;
   font-style: normal;
@@ -141,4 +150,7 @@
     color: $primary-text-color;
     background: $secondary-hover-bgc;
   }
+}
+.location-btn {
+  margin-bottom: 10px;
 }
