@@ -13,15 +13,50 @@
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/header.html"></include>
+    <!-- <include src="./partials/header.html"></include>
     <include src="./partials/example.html"></include>
     <include src="./partials/clients.html"></include>
     <include src="./partials/kruktest.html"></include>
     <section class="features">
       Lorem ipsum dolor sit amet. Hello world
 
-      <a href="" class="logo">logo</a>
+      <a href="" class="logo">logo</a> -->
+
     </section>
+
+    <section class="reviews">
+      <h3 class="visually-hidden">Отзывы покупателей</h3>
+      <ul class="reviews__list list">
+          <li class="reviews__item">
+              <img src="./images/reviews/1.jpg" alt="" width="85px">
+          </li>
+        <li class="reviews__item">
+            <img src="./images/reviews/2.jpg" alt="" width="85px">
+        </li>
+        <li class="reviews__item">
+            <img src="./images/reviews/3.jpg" alt="" width="85px">
+        </li>
+      </ul>
+
+      <p class="reviews__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+  congue. Lorem ipsum primis in nibh vel risus.</p>
+
+  <div class="reviews__icon">
+    <svg class="reviews_home" width="12,4" height="12">
+      <use href="./images/sprite/sprite.svg#icon-home"></use>
+    </svg>
+  
+    <svg class="reviews_home" width="12,4" height="12">
+      <use href="./images/sprite/sprite.svg#icon-Ellipse"></use>
+    </svg>
+  </div>
+
+  <svg class="reviews_home" width="12,4" height="12">
+    <use href="./images/sprite/sprite.svg#icon-Ellipse"></use>
+  </svg>
+</div>
+ 
+  </section>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
