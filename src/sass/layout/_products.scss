@@ -22,6 +22,7 @@
     }
     
     .products__item-1 {
+
     display: flex;
     flex-direction: column;
     position: relative;
@@ -73,7 +74,7 @@
             margin: 0 auto;
             transform: translateY(-45% );
         }
-    }
+   }
     
     .prodacts__name{
     font-family: $accent-font;
@@ -83,11 +84,13 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primary-text-color;
+
      margin-bottom: 30px;
     display: block;
     }
     
     .prodacts__text{
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
@@ -96,6 +99,7 @@
     color: $primary-text-color;
     padding-left: 40px;
     padding-right: 40px;
+
     margin-bottom: 30px;
    
     &::before{
