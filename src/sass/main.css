@@ -60,7 +60,10 @@ img {
     padding-bottom: 39px;
     background-color: #fff5f6;
     position: relative;
-    background-image: url(images/about/mobile-bg.png);
+    background-image: url(../images/about/mobile-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 90%;
   }
   .about__label {
     font-family: Titan One;
@@ -110,11 +113,6 @@ img {
     margin-top: 15px;
     margin-bottom: 25px;
   }
-  .about__background-image {
-    position: absolute;
-    top: 80%;
-    left: 0;
-  }
   .about__button {
     border-radius: 22px;
     background-color: #fff;
@@ -133,7 +131,7 @@ img {
     padding: 10px 37px;
     margin: 0 auto;
     border: none;
-    width: 176px;
+    min-width: 176px;
     height: 44px;
   }
 }

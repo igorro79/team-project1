@@ -4,7 +4,10 @@
     padding-bottom: 39px;
     background-color: $secondary-bgc;
     position: relative;
-    background-image: url('images/about/mobile-bg.png');
+    background-image: url(../images/about/mobile-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 90%;
   }
 
   .about__label {
@@ -60,12 +63,6 @@
     margin-top: 15px;
     margin-bottom: 25px;
   }
-
-  // .about__background-image {
-  //   position: absolute;
-  //   top: 80%;
-  //   left: 0;
-  // }
 
   .about__button {
     border-radius: 22px;
