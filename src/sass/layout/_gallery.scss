@@ -6,6 +6,10 @@
     $primary-bgc 100%
   );
 }
+.gallery__container {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
 
 .gallery__descktop {
   @media screen and (max-width: 1279px) {
