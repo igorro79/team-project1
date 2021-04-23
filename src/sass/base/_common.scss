@@ -1,7 +1,13 @@
 body {
-  font-family: $primary-font, sans-serif;
+  font-family: $primary-font;
   color: $default-text-color;
   background-color: $primary-bgc;
+
+  @media screen and (max-width: 767px) {
+    &.menu-open {
+      overflow: hidden;
+    }
+  }
 }
 
 h1,
