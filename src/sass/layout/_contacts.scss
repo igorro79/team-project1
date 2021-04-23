@@ -1,7 +1,9 @@
-.contacts-container {
-  margin: 0 auto;
-  padding: 0 15px;
+.contacts {
+  background: $secondary-bgc;
+  padding-top: 44px;
+  padding-bottom: 66px;
 }
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .contacts-container {
     width: 480px;
@@ -17,8 +19,7 @@
     width: 1280px;
   }
 }
-.contacts {
-  display: block;
+.contacts__list {
   margin: 0 auto;
 }
 .contacts__list-card {
@@ -26,13 +27,17 @@
   padding-top: 42px;
   padding-bottom: 42px;
   padding-right: 20px;
+  width: 220px;
   height: 427px;
-  background: #ffffff;
+  background: $primary-bgc;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   &:not(&:last-child) {
     margin-bottom: 20px;
   }
+}
+.contacts-list__link {
+  color: $secondary-text-color;
 }
 .contacts__list-button {
   min-width: 80px;
@@ -116,6 +121,8 @@
   margin-top: 54px;
 }
 .contacts-button-set__but {
+  margin: 0 auto;
+  padding: 8px 20px 8px 20px;
   font-family: $primary-font;
   font-style: normal;
   font-weight: bold;
