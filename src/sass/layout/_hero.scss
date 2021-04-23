@@ -1,0 +1,98 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  background: $primary-accent-color;
+  overflow: hidden;
+}
+
+//for mobile
+
+.hero {
+  padding-top: 193px;
+  padding-bottom: 160px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__cell--right,
+  .hero__label,
+  .hero__milk,
+  .hero__girl {
+    display: none;
+  }
+}
+
+.hero__wrapper {
+  position: relative;
+  z-index: 9;
+}
+
+.hero__cell--left {
+  width: 230px;
+}
+
+.page__title {
+  font-family: $accent-font;
+  @include font(26px, normal, 1.15);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+
+  &--big {
+    display: inline-block;
+    @include font(48px, normal, 0.96);
+    color: $secondary-accent-color;
+  }
+}
+.hero__btns {
+  margin-top: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__btns__item {
+  &:first-child {
+    margin-right: 8px;
+  }
+}
+
+.hero__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  @include font(8px, normal, 1.25);
+  &--main {
+    width: 83px;
+  }
+
+  &--secondary {
+    width: 62px;
+  }
+}
+
+.hero__round {
+  position: absolute;
+  z-index: 1;
+  top: 83px;
+  right: -62px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background: $third-accent-color;
+}
+
+.hero__icecream {
+  position: absolute;
+  z-index: 2;
+  right: 32px;
+  bottom: 0;
+  width: 171px;
+  height: 410px;
+  background-image: url(/images/hero-header/hero-icecream@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/hero-header/hero-icecream@2x.png);
+  }
+}
