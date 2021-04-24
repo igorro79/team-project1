@@ -99,19 +99,25 @@
   background: transparent;
   border: none;
 }
+.close__icon {
+  height: 14px;
+  width: 14px;
+}
 
 .burger__btn {
   cursor: pointer;
-  height: 12px;
-  width: 20px;
+  padding: 0;
   background: transparent;
   border: none;
+}
+.burger__icon {
+  height: 12px;
+  width: 20px;
 }
 
 .header__btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0 43px;
   min-height: 44px;
   border-radius: 22px;
@@ -121,6 +127,13 @@
       display: none;
     }
   }
+}
+
+.header__btn__icon {
+  margin-left: 10px;
+  height: 10px;
+  width: 6px;
+  stroke: #333;
 }
 
 // for tablet
