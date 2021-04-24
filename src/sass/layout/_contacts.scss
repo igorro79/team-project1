@@ -226,24 +226,13 @@
     justify-content: center;
   }
 }
-.contacts-button-set__but {
+.contacts__but {
   display: block;
   margin: 0 auto;
   cursor: pointer;
   padding: 8px 20px 8px 20px;
-  font-family: $primary-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.31;
   border: transparent;
   border-radius: 22px;
-  color: $secondary-accent-color;
-  &:hover,
-  &:focus {
-    color: $primary-text-color;
-    background: $secondary-hover-bgc;
-  }
 }
 .location-btn {
   margin-bottom: 10px;
