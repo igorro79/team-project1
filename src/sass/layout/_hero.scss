@@ -43,7 +43,6 @@
   color: $primary-text-color;
 
   &--big {
-    display: inline-block;
     @include font(48px, normal, 0.96);
     color: $secondary-accent-color;
   }
@@ -113,6 +112,34 @@
   .hero__container {
     padding-top: 102px;
     padding-bottom: 34px;
+  }
+
+  .hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero__cell--left {
+    width: 180px;
+  }
+  .page__title {
+    @include font(22px, normal, 1.14);
+
+    &--big {
+      @include font(34px, normal, 0.91);
+    }
+  }
+  .hero__btns {
+    margin-top: 20px;
+  }
+  .hero__label {
+    margin-top: 66px;
+    margin-left: 120px;
+    width: 114px;
+  }
+  .hero__description {
+    @include font(8px, normal, 1.5);
+    color: $primary-text-color;
   }
   .hero__round {
     height: 322px;
