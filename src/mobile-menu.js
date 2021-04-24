@@ -3,10 +3,13 @@ const closeMobileMenuBtn = document.querySelector('.close__btn')
 const heroBackdrop = document.querySelector('.header__backdrop')
 const menu = document.querySelector('.page-header')
 const navLinks = document.querySelectorAll('.nav__link')
+const mobileHeaderBtn  = document.querySelector('.menu__btn')
 
 openMobileMenuBtn.addEventListener("click", toggleMenu)
 closeMobileMenuBtn.addEventListener("click", toggleMenu)
 heroBackdrop.addEventListener('click', toggleMenu)
+mobileHeaderBtn.addEventListener('click', toggleMenu)
+
 
 navLinks.forEach((link) => {
     link.addEventListener('click', toggleMenu)

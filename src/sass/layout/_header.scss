@@ -102,6 +102,7 @@
 .close__icon {
   height: 14px;
   width: 14px;
+  stroke: $primary-text-color;
 }
 
 .burger__btn {
@@ -113,6 +114,7 @@
 .burger__icon {
   height: 12px;
   width: 20px;
+  stroke: $secondary-accent-color;
 }
 
 .header__btn {
@@ -133,7 +135,7 @@
   margin-left: 10px;
   height: 10px;
   width: 6px;
-  stroke: #333;
+  stroke: $secondary-accent-color;
 }
 
 // for tablet
