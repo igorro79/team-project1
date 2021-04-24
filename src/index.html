@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
   </head>
   <body>
@@ -30,9 +32,32 @@
     <include src="./partials/footer.html"></include>
     <include src="./partials/modal.html"></include>
 
+    <!-- =============тест для слайдера============ -->
+
+    <div class="container">
+      <div class="slideshow">
+        <div class="pics"><img src="images/gallery/desktop/pic1.jpg" alt="" /></div>
+        <div class="pics"><img src="images/gallery/desktop/pic2.jpg" alt="" /></div>
+        <div class="pics"><img src="images/gallery/desktop/pic3.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <!-- библиотеки для slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slider.js"></script>
+
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+
     <script src="./mobile-menu.js"></script>
+    <<<<<<< HEAD
     <script src="./modal.js"></script>
+    =======
+    <script src="./index.js"></script>
+    >>>>>>> dev
   </body>
 </html>
