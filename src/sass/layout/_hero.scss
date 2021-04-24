@@ -1,16 +1,15 @@
 .hero {
-  position: relative;
-  z-index: 1;
   background: $primary-accent-color;
   overflow: hidden;
 }
 
-//for mobile
-
-.hero {
+.hero__container {
+  position: relative;
   padding-top: 193px;
   padding-bottom: 160px;
 }
+
+//for mobile
 
 @media screen and (max-width: 767px) {
   .hero__cell--right,
