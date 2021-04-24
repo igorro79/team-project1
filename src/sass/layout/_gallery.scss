@@ -1,14 +1,46 @@
 .gallery {
-  background-image: linear-gradient(
-    to bottom,
-    $secondary-bgc 40%,
-    $primary-bgc 40%,
-    $primary-bgc 100%
-  );
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+      to bottom,
+      $secondary-bgc 44.5%,
+      $primary-bgc 44.5%,
+      $primary-bgc 100%
+    );
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      $secondary-bgc 44.8%,
+      $primary-bgc 44.8%,
+      $primary-bgc 100%
+    );
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+      to bottom,
+      $secondary-bgc 45%,
+      $primary-bgc 45%,
+      $primary-bgc 100%
+    );
+  }
 }
 .gallery__container {
-  padding-top: 70px;
-  padding-bottom: 60px;
+  max-width: 480px;
+  padding-top: 46px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
 }
 
 .gallery__descktop {
