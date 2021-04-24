@@ -26,13 +26,13 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  background: $primary-bgc;
+  background: $secondary-hover-bgc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
 }
 .modal-close__btn-icon {
-  fill: $default-text-color;
+  fill: $primary-bgc;
   width: 11px;
   height: 11px;
 }
@@ -88,7 +88,7 @@
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 42px;
+  padding-left: 16px;
   cursor: pointer;
   transition: border-color 250ms linear;
   &:focus {
