@@ -9,6 +9,7 @@
       display: flex;
       justify-content: center;
       padding-top: 30px;
+      padding-bottom: 30px;
     }
 
     .reviews-text {
@@ -19,7 +20,7 @@
        display: inline;
 	   background-repeat: no-repeat;
 	   background-position: center bottom 1px;
-	   background-size: 100% 3px;
+	   background-size: 100% 1px;
 	   background-image: linear-gradient(to right,#E1E1E1,#E1E1E1);
 
        text-align: center;
