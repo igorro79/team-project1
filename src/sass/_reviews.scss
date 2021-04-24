@@ -1,29 +1,29 @@
 @media screen and (min-width: 480px) {
-  .reviews {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
-  .reviews__list {
-    display: flex;
-    padding-top: 30px;
+    .reviews {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
     
-  }
-  
-  .reviews__text {
+    .reviews__list {
+      display: flex;
+      padding-top: 30px;
+      
+    }
+    
+    .reviews__text {
+      text-align: center;
+      padding-top: 43px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21,25;
     text-align: center;
-    padding-top: 43px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 21,25;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #000000;
+    letter-spacing: 0.04em;
+    color: #000000;
+    }
+    
+    .reviews__icon {
+      display: flex;
+    }
   }
-  
-  .reviews__icon {
-    display: flex;
-  }
-}
