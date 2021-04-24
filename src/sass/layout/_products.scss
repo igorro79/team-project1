@@ -9,6 +9,7 @@
     text-transform: uppercase;
     color: $third-accent-color;
     margin-bottom: 15px;
+    padding-top: 122px;
     }
     .products-title{
     font-family: $accent-font;
@@ -22,39 +23,73 @@
     }
     
     .products__item-1 {
-    
-        background: $primary-accent-color;
-    height: 485px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: $primary-accent-color;
     border-radius: 24px;
     margin-bottom: 130px;
+    padding-bottom: 41px;
+    &::before{
+        background-image: url(../images/products/ice-cream.png);
+        background-size: 250px 250px;
+        width: 250px;
+        height: 250px;
+        content: '';
+        display: block;
+        margin: 0 auto;
+        transform: translateY(-45% );
+    }
     }
     .products__item-2 {
-        
-        height: 485px;
-    border-radius: 24px;
-        background: #F0D1A5;
+        display: flex;
+        flex-direction: column;
+        border-radius: 24px;
+        background: $product-one-color;
         margin-bottom: 130px;
+        padding-bottom: 41px;
+        &::before{
+            background-image: url(../images/products/ice-coffe.png);
+            background-size: 250px 250px;
+            width: 250px;
+            height: 250px;
+            content: '';
+            display: block;
+            margin: 0 auto;
+            transform: translateY(-45% );
+        }
+
     }
     .products__item-3{
-       
-        height: 485px;
-    border-radius: 24px;
-    background: #C2E297;
-    }
+        border-radius: 24px;
+        background: $product-two-color;
+        padding-bottom: 41px;
+        &::before{
+            background-image: url(../images/products/milkshakes.png);
+            background-size: 250px 250px;
+            width: 250px;
+            height: 250px;
+            content: '';
+            display: block;
+            margin: 0 auto;
+            transform: translateY(-45% );
+        }
+   }
     
     .prodacts__name{
     font-family: $accent-font;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $primary-text-color;
     margin-bottom: 30px;
-    padding-top: 161px;
+    display: block;
     }
-    .prodacts__text{
     
+    .prodacts__text{
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
@@ -63,18 +98,97 @@
     color: $primary-text-color;
     padding-left: 40px;
     padding-right: 40px;
+
+    margin-bottom: 30px;
+   
+    &::before{
+        background-image: url(../images/products/group-4.png);
+        background-size: 25px 6px;
+        width: 25px;
+        height: 6px;
+        content: "";
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        background-repeat: no-repeat;
     }
-    @media screen and (min-width: 768px) {
-        .container{
-            width: 768px;
-        }
-        
+    
+}
+ .products__button{
+    background-image: url(../images/products/arrow-right-4.png);
+    background-size: 40px 40px;
+    width: 45px;
+    height: 45px;
+    content: "";
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    border-color: transparent;
+    background-color: transparent;
+    padding-bottom: 41px;
+
+    }
+    
+@media screen and (min-width: 768px) {
         .products-set{
             display: flex;
             margin: -10px;
         }
         .products__item-1, .products__item-2, .products__item-3{
-            margin: 10px;
+            margin: 0 10px 0 10px;
             flex-basis: calc((768px - 3 * 10px) / 3);
+            &::before{
+                background-size: 220px 226px;
+                width: 220px;
+                height: 226px;
+                
+            }
+        }
+        .prodacts-label{
+            font-size: 26px;
+            line-height:1.15;
+        }
+        .products-title{
+            font-size: 48px;
+            line-height: 1.46;
+         }
+         .prodacts__text{
+            line-height: 1.79;
+         }
+}
+       
+@media screen and (min-width: 1280px) {
+        .products-set{
+            display: flex;
+            margin: -15px;
+        }
+        .products__item-1, .products__item-2, .products__item-3{
+            margin: 0px 15px 0 15px;
+            flex-basis: calc((1280px - 3 * 15px) / 3);
+            &::before{
+                background-size: 335px 335px;
+                width: 335px;
+                height: 335px;
+        }
+    }
+        .prodacts-label{
+            font-size: 30px;
+            line-height: 1.13;
+            letter-spacing: 0.04em;
+        }
+        .products-title{
+        font-size: 58px;
+        line-height: 1.17;
+        margin-bottom: 260px;
+        }
+        .prodacts__name{
+        font-size: 30px;
+        line-height: 1.13;
+        }
+        .prodacts__text{
+        font-size: 16px;
+        line-height: 1.75;
         }
     }
