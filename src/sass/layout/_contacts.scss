@@ -6,6 +6,10 @@
     padding-top: 60px;
     padding-bottom: 80px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 70px;
+    padding-bottom: 82px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -26,6 +30,13 @@
 .contacts__list {
   display: block;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: -20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: -25px;
+  }
 }
 .contacts__list-card {
   display: block;
@@ -41,6 +52,24 @@
   border-radius: 24px;
   &:not(&:last-child) {
     margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    height: 544px;
+    padding-left: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc(100% / 3 - 25px);
+    margin-left: 25px;
+    height: 572px;
+    padding-left: 45px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 45px;
   }
 }
 .contacts-list__link {
@@ -61,6 +90,10 @@
   letter-spacing: 0.04em;
   color: $primary-text-color;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
 .truck {
   background: $product-two-color;
@@ -75,6 +108,15 @@
   letter-spacing: 0.04em;
   color: $default-text-color;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 .location__city-name-discription {
   font-family: $primary-font;
@@ -83,9 +125,16 @@
   font-size: 12px;
   line-height: 1.5;
   color: $secondary-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
 }
-.location,
-.work {
+.location {
   position: relative;
   margin-bottom: 50px;
   &::after {
@@ -97,6 +146,26 @@
     height: 1px;
     width: 100%;
     background-color: $page-line-color;
+    @media screen and (min-width: 768px) {
+      top: 125px;
+    }
+  }
+}
+.work {
+  position: relative;
+  margin-bottom: 50px;
+  &::after {
+    top: 110px;
+    left: 0;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $page-line-color;
+    @media screen and (min-width: 768px) {
+      top: 130px;
+    }
   }
 }
 
@@ -107,6 +176,14 @@
   font-size: 12px;
   line-height: 1.83;
   color: $default-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 .work__time {
   font-family: $primary-font;
@@ -115,6 +192,14 @@
   font-size: 12px;
   line-height: 1.83;
   color: $third-accent-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 .contacts-list {
   font-family: $primary-font;
@@ -123,9 +208,23 @@
   font-size: 12px;
   line-height: 1.5;
   color: $secondary-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 .contacts-button-set {
   margin-top: 54px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 }
 .contacts-button-set__but {
   display: block;
@@ -137,14 +236,9 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
-  align-items: center;
-  text-align: center;
   border: transparent;
   border-radius: 22px;
   color: $secondary-accent-color;
-  &:not(&:last-child) {
-    margin-bottom: 10px;
-  }
   &:hover,
   &:focus {
     color: $primary-text-color;
@@ -153,4 +247,8 @@
 }
 .location-btn {
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
 }
