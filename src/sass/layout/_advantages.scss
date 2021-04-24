@@ -1,5 +1,5 @@
 .advantages {
-  padding: 39px 0 97px 0;
+  padding: 39px 0 70 px 0;
   background-color: $secondary-bgc;
 }
 
@@ -43,6 +43,12 @@
 
   @media screen and (max-width: 480px) {
     max-width: 230px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1280px) {
+  .advantages__list {
+    display: flex;
+    justify-content: center;
   }
 }
 
