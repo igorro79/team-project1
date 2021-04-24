@@ -30,7 +30,7 @@
     }
     
     .reviews__text {
-       display: inline;
+     
 	     background-repeat: no-repeat;
 	     background-position: center bottom 1px;
 	     background-size: 100% 1px;
@@ -45,6 +45,7 @@
        text-align: center;
        letter-spacing: 0.04em;
        color: #000000;
+       
 
     &:hover {
         background-image: linear-gradient(to right,#E1E1E1,#E1E1E1);
