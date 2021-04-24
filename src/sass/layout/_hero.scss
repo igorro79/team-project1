@@ -9,6 +9,12 @@
   padding-bottom: 160px;
 }
 
+.hero__decor__img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 //for mobile
 
 @media screen and (max-width: 767px) {
@@ -98,5 +104,32 @@
   background-size: cover;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/images/hero-header/hero-icecream@2x.png);
+  }
+}
+
+// for tablet
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding-top: 102px;
+    padding-bottom: 34px;
+  }
+  .hero__round {
+    height: 322px;
+    width: 324px;
+    top: 31px;
+    right: 137px;
+  }
+  .hero__milk {
+    position: absolute;
+    left: 0;
+    bottom: 28px;
+    height: 126px;
+    width: 124px;
+  }
+  .hero__icecream {
+    height: 336px;
+    width: 143px;
+    right: 247px;
   }
 }
