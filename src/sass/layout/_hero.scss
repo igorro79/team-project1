@@ -66,6 +66,11 @@
 
   &--secondary {
     width: 62px;
+
+    &:hover,
+    &:focus {
+      background: #c7133e;
+    }
   }
 }
 
