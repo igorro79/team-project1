@@ -2,32 +2,32 @@
     <b class="header-modal__title">Lorem ipsum dolor sit amet</b>
     <form class="header-modal__form">
         <label class="header-modal__label">
-            <span class="header-modal__description">First name</span>
-            <input type="text" class="header-modal__input">
+            <span class="header-modal__description">First name*</span>
+            <input type="text" class="header-modal__input" required>
         </label>
         <label class="header-modal__label">
             <span class="header-modal__description">Last name</span>
             <input type="text" class="header-modal__input">
         </label>
         <label class="header-modal__label">
-            <span class="header-modal__description">Telephone number</span>
-            <input type="tel" class="header-modal__input">
+            <span class="header-modal__description">Telephone number*</span>
+            <input type="tel" class="header-modal__input" required>
         </label>
         <label class="header-modal__label">
-            <span class="header-modal__description">E-mail</span>
-            <input type="email" class="header-modal__input">
+            <span class="header-modal__description">E-mail*</span>
+            <input type="email" class="header-modal__input" required>
         </label>
-        <label class="header-modal__label">
+        <label class="header-modal__label header-modal__comment">
             <span class="header-modal__description">Additional information</span>
             <textarea class="header-modal__textarea"></textarea>
         </label>
         <label class="header-modal__label header-modal__agreement">
-            <input type="checkbox" class="header-modal-checkbox visually-hidden">
+            <input type="checkbox" class="header-modal-checkbox visually-hidden" required>
             <svg class="header-checkbox__icon" width="16" height="14">
                 <use href="/images/SVG/icons.svg#icon-check"></use>
             </svg>
-            <span class="header-modal-checkbox__text">Lorem ipsum dolor sit amet <a href="#"
-                    class="header__modal-checkbox__link">consectetur adipisicing.</a></span>
+            <span class="header-modal-checkbox__text">Lorem ipsum dolor sit amet <a href=""
+                    class="header__modal-checkbox__link" target="_blank" rel="noopener noreferrer nofollow">consectetur adipisicing.</a></span>
         </label>
         <button class="btn btn--secondary header-modal__form-btn" type="submit">Send
             <svg class="header-modal__form__btn__icon" width="4" height="8">
@@ -35,7 +35,7 @@
             </svg>
         </button>
     </form>
-    <button class="header-modal__close-btn">
+    <button class="header-modal__close-btn" aria-label="click me to close modal window">
         <svg class="header-modal__close-icon" width="14" height="14">
             <use href="/images/svg/icons.svg#icon-close"></use>
         </svg>
