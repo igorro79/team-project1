@@ -25,14 +25,6 @@
             justify-content: center;
           }
       
-          .reviews__quotes {
-            display: block;
-            margin: 0 auto;
-            left: 61px;
-            top: 28px;
-            background: transparent;
-          }
-      
           .reviews-text {
             display: flex;
             position: relative;
@@ -58,6 +50,16 @@
              letter-spacing: 0.04em;
              color: #000000;
           }
+
+          .style-text::before{
+            content: "";
+            width: 54px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-image: url("../images/reviews/quotes.svg");
+            background-size: contain;
+          }
+
           .reviews-icon-list__reviews-icon-link {
             justify-content: center;
             margin: 0 auto;
@@ -71,13 +73,22 @@
       
           .reviews-icon-list__name {
             display: block;
-            padding-bottom: 22px;
+            padding-top: 30px;
             font-family: $primary-font;
             font-weight: 500;
             font-size: 14px;
             line-height: 186%;
             text-align: center;
             color: #000000;
+          }
+
+          .reviews-icon-list__name::before{
+            content: "";
+            width: 32px;
+            height: 4px;
+            background-repeat: no-repeat;
+            background-image: url("../images/reviews/group.svg");
+            background-size: contain;
           }
 
           .reviews-icon-list__nav {
