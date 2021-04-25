@@ -173,11 +173,11 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .about .container {
+  .about {
     background-image: url(../images/about/desktop-bg.png);
     background-repeat: no-repeat;
-    background-position: 0 120%;
-    background-size: contain;
+    background-position: bottom;
+    background-size: 100vw;
 
     @media (-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/desktop-bg@2x.png);
