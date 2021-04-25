@@ -15,10 +15,10 @@
 
 .nav__link {
   display: flex;
-
   align-items: center;
   @include font(14px, bold, 1.29);
   color: $primary-text-color;
+  transition: color 250ms linear;
 
   &:hover,
   &:focus {
@@ -193,5 +193,8 @@
     display: grid;
     grid-template-columns: repeat(5, max-content);
     gap: 35px;
+  }
+  .nav__link {
+    @include font(16px, bold, 1.31);
   }
 }

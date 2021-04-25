@@ -229,3 +229,120 @@
     }
   }
 }
+
+//for desktop
+
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    padding-top: 171px;
+    padding-bottom: 58px;
+    padding-left: 115px;
+    padding-right: 97px;
+  }
+  .hero__cell--left {
+    width: 277px;
+  }
+  .page__title {
+    @include font(38px, normal, 1.13);
+
+    &--big {
+      @include font(58px, normal, 0.86);
+    }
+  }
+  .hero__btns {
+    margin-top: 25px;
+  }
+  .hero__btns__item {
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
+
+  .hero__btn {
+    height: 40px;
+    @include font(14px, normal, 1.28);
+    &--main {
+      width: 138px;
+    }
+
+    &--secondary {
+      width: 104px;
+    }
+  }
+
+  .hero__list {
+    margin-right: 18px;
+  }
+
+  .hero__item {
+    @include font(14px, normal, 1.28);
+    &:last-child {
+      margin-top: 15px;
+    }
+  }
+  .hero__count {
+    @include font(46px, normal, 1.15);
+    &::before {
+      top: -3px;
+      right: 0;
+      height: 30px;
+      width: 30px;
+      transform: translateX(55%);
+    }
+  }
+
+  .hero__label {
+    margin-top: 112px;
+    margin-left: 180px;
+    width: 200px;
+  }
+  .hero__description {
+    @include font(14px, normal, 1.42);
+  }
+  .hero__link {
+    margin-top: 20px;
+    height: 26px;
+    width: 26px;
+  }
+
+  .hero__round {
+    right: 267px;
+    bottom: 75px;
+    height: 538px;
+    width: 538px;
+  }
+
+  .hero__icecream {
+    height: 557px;
+    width: 236px;
+    right: 450px;
+    background-image: url(/images/hero-header/hero-icecream@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/hero-header/hero-icecream@2x.png);
+    }
+  }
+
+  .hero__milk {
+    left: 77px;
+    bottom: 45px;
+    height: 191px;
+    width: 188px;
+    background-image: url(/images/hero-header/hero-milk@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/hero-header/hero-milk@2x.png);
+    }
+  }
+
+  .hero__girl {
+    right: 109px;
+    height: 232px;
+    width: 293px;
+    background-image: url(/images/hero-header/hero-girl@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/hero-header/hero-girl@2x.png);
+    }
+  }
+}
