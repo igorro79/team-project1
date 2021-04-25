@@ -69,6 +69,7 @@
   }
 }
 .header-modal__agreement {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,6 +114,7 @@
 }
 
 .header-modal__close-btn {
+  cursor: pointer;
   position: absolute;
   top: 8px;
   right: 10px;
