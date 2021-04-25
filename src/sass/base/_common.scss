@@ -8,6 +8,9 @@ body {
       overflow: hidden;
     }
   }
+  &.header-modal-open {
+    overflow: hidden;
+  }
 }
 
 h1,

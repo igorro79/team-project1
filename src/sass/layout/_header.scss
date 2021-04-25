@@ -51,20 +51,27 @@
   width: 6px;
   stroke: $secondary-accent-color;
 }
+.header__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: hsla(345, 100%, 86%, 0.6);
+  opacity: 0;
+  pointer-events: none;
+
+  .page-header.header-modal-open & {
+    opacity: 1;
+    pointer-events: initial;
+    transition: opacity 250ms linear;
+  }
+}
 
 // styyles till 1280px
 
 @media screen and (max-width: 1279px) {
   .header__backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background: hsla(345, 100%, 86%, 0.6);
-    opacity: 0;
-    pointer-events: none;
-
     .page-header.menu-open & {
       opacity: 1;
       pointer-events: initial;
@@ -179,7 +186,6 @@
     padding-left: 40px;
   }
 
-  .header__backdrop,
   .menu__btn--hidden,
   .burger,
   .close__btn {
