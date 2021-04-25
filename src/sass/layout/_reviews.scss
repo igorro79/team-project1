@@ -31,11 +31,14 @@
               position: relative;
               justify-content: center;
               margin: 0 auto;
+              height: 308px;
               width: 280px;
               background: #FAFAFA;
               &::before {
                 content: "";
                 position: absolute;
+                top: 28px;
+                left: 61px;
                 right: 200px;
                 width: 54px;
                 height: 40px;
@@ -45,16 +48,20 @@
                 background-position: center;
               }
             }
+
+            .reviews__style-text {
+              display: flex;
+              margin: 0 auto;
+              padding-top: 43px;
+            }
           
           
           .style-text {
-            margin: 0 auto;
-            display: flex;
             background-image: repeating-linear-gradient(
               180deg
               , transparent, transparent 29px, #E1E1E1 30px);
            
-             width: 157px;
+             width: 158px;
              font-family: $primary-font;
              font-weight: 500;
              font-size: 12px;
@@ -157,12 +164,27 @@
        color: #000000;
     }
 
-    .reviews__quotes {
-      display: block;
+    .reviews__text {
+      display: flex;
+      position: relative;
+      justify-content: center;
       margin: 0 auto;
-      left: 83px;
-      top: 28px;
-      background: transparent;
+      height: 164px;
+      width: 620px;
+      background: #FAFAFA;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: 70px;
+        right: 200px;
+        width: 54px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-image: url("../images/qq.svg");
+        background-size: contain;
+        background-position: center;
+      }
     }
   }
 
@@ -183,7 +205,7 @@
         180deg
         , transparent, transparent 27px, #E1E1E1 28px);
      
-       width: 720px;
+       width: 770px;
        font-family: $primary-font;
        font-weight: 500;
        font-size: 16px;
@@ -194,12 +216,27 @@
 
     }
 
-    .reviews__quotes {
-      display: block;
+    .reviews__text {
+      display: flex;
+      position: relative;
+      justify-content: center;
       margin: 0 auto;
-      left: 90px;
-      top: 28px;
-      background: transparent;
+      height: 138px;
+      width: 926px;
+      background: #FAFAFA;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: 50px;
+        right: 200px;
+        width: 54px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-image: url("../images/qq.svg");
+        background-size: contain;
+        background-position: center;
+      }
     }
 
     .reviews-icon-list__name {
