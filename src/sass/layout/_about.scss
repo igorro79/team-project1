@@ -84,6 +84,7 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     margin: 15px auto 26px;
+    max-width: 200px;
   }
 
   .about__image {
@@ -93,27 +94,26 @@
   .about__description-begin {
     font-size: 12px;
     line-height: 162%;
-    margin: 46px 50px 35px;
+    margin-bottom: 35px;
   }
 
-  .about__description,
+  .about__description {
+    font-size: 12px;
+    line-height: 162%;
+    margin-bottom: 15px;
+  }
+
   .about__description-end {
     font-size: 12px;
     line-height: 162%;
-    margin: 0 50px;
-  }
-
-  .about__description-end {
-    margin-top: 15px;
     margin-bottom: 25px;
   }
 
   .about__text-set {
-    margin: 0 35px;
-  }
-
-  .about__button {
-    margin-left: 50px;
+    width: 220px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 46px;
   }
 }
 
@@ -141,7 +141,7 @@
   .about__description-begin {
     font-size: 14px;
     line-height: 176%;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   .about__description,
@@ -160,13 +160,11 @@
   }
 
   .about__image-сow {
-    margin-left: 39px;
     margin-right: 17px;
     width: 340px;
   }
 
   .about__text-set {
-    margin-right: 36px;
     width: 340px;
     margin-top: 50px;
   }
