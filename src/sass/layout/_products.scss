@@ -188,6 +188,10 @@
 }
        
 @media screen and (min-width: 1280px) {
+    .products .container{
+        padding-left: 115px;
+        padding-right: 115px;
+    }
         .products-set{
             display: flex;
             margin: -15px;
@@ -200,8 +204,8 @@
                 background-size: 335px 335px;
                 width: 335px;
                 height: 335px;
-                transform: translate(10%, -110% );
-        }
+                transform: translateY(-110% );
+            }       
     }
         .prodacts-label{
             font-size: 30px;
