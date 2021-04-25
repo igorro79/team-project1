@@ -110,8 +110,10 @@
   }
 
   .about__text-set {
-    width: 220px;
+    max-width: 380px;
     margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-left: auto;
     margin-top: 46px;
   }
