@@ -1,4 +1,5 @@
 .backdrop {
+  z-index: 20;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +9,7 @@
   transition: all 250ms linear;
 }
 .modal {
+  z-index: 20;
   width: 450px;
   height: auto;
   padding: 40px;
