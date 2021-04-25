@@ -5,19 +5,23 @@ const menu = document.querySelector('.page-header')
 const navLinks = document.querySelectorAll('.nav__link')
 const mobileHeaderBtn  = document.querySelector('.menu__btn')
 
-openMobileMenuBtn.addEventListener("click", toggleMenu)
-closeMobileMenuBtn.addEventListener("click", toggleMenu)
-heroBackdrop.addEventListener('click', toggleMenu)
-mobileHeaderBtn.addEventListener('click', toggleMenu)
+openMobileMenuBtn.addEventListener("click", openMenu)
+closeMobileMenuBtn.addEventListener("click", closeMenu)
+heroBackdrop.addEventListener('click', closeMenu)
+mobileHeaderBtn.addEventListener('click', closeMenu)
 
 
 navLinks.forEach((link) => {
-    link.addEventListener('click', toggleMenu)
+    link.addEventListener('click', closeMenu)
 })
 
-function toggleMenu() {
-    menu.classList.toggle('menu-open')
-    document.body.classList.toggle('menu-open')
+function openMenu() {
+    menu.classList.add('menu-open')
+    document.body.classList.add('menu-open')
+}
+function closeMenu() {
+    menu.classList.remove('menu-open')
+    document.body.classList.remove('menu-open')
 }
 
 
