@@ -112,3 +112,25 @@
   height: 140px;
   width: 220px;
 }
+
+.modal-about__main-label {
+  font-family: $accent-font;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: $third-accent-color;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.modal-about__secondary-label {
+  font-family: $accent-font;
+  font-size: 52px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $secondary-accent-color;
+  margin-bottom: 144px;
+}
