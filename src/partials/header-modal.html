@@ -3,15 +3,19 @@
     <form class="header-modal__form">
         <label class="header-modal__label">
             <span class="header-modal__description">First name*</span>
-            <input type="text" class="header-modal__input" required>
+            <input name="user_name" type="text" class="header-modal__input" required minlength="2">
         </label>
         <label class="header-modal__label">
             <span class="header-modal__description">Last name</span>
-            <input type="text" class="header-modal__input">
+            <input name="user_last_name" type="text" class="header-modal__input" minlength="2">
         </label>
         <label class="header-modal__label">
             <span class="header-modal__description">Telephone number*</span>
-            <input type="tel" class="header-modal__input" required>
+            <input name="user_tel" 
+            type="tel" 
+            class="header-modal__input" 
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+            title="011-222-33-44" required>
         </label>
         <label class="header-modal__label">
             <span class="header-modal__description">E-mail*</span>
