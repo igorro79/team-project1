@@ -220,6 +220,11 @@
   border-radius: 8px;
   overflow: auto;
 }
+.header-modal__title {
+  display: block;
+  text-align: center;
+  @include font(14px, bold, 1.15);
+}
 
 .header-modal__form {
   margin-top: 10px;
@@ -241,32 +246,54 @@
   background: transparent;
   border: 1px solid #333;
   border-radius: 4px;
+  transition: border-color 250ms linear;
+  .header-modal__label:hover & {
+    border-color: $primary-accent-color;
+  }
+  &:focus {
+    border-color: $primary-accent-color;
+  }
 }
 .header-modal__textarea {
   display: block;
   resize: none;
-  height: 80px;
+  height: 75px;
   width: 100%;
   background: transparent;
   border: 1px solid #333;
   border-radius: 4px;
+  .header-modal__label:hover & {
+    border-color: $primary-accent-color;
+  }
+  &:focus {
+    border-color: $primary-accent-color;
+  }
 }
 .header-modal__agreement {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.header-modal__checkbox-thumb {
-  margin-right: 4px;
+.header-checkbox__icon {
   display: block;
-  height: 14px;
-  width: 14px;
-  background: #eee;
+  margin-right: 8px;
+  border: 2px solid #333;
+  border-radius: 2px;
+  fill: transparent;
+  transition: fill 250ms linear, background 250ms linear, border-color 250ms linear;
+
+  .header-modal-checkbox:checked + & {
+    fill: $primary-text-color;
+    background: $primary-accent-color;
+    border-color: $primary-accent-color;
+  }
 }
-.header__modal-checkbox__text {
+.header-modal-checkbox__text {
   display: block;
   @include font(12px, normal, 1.15);
 }
-.header__modal__form-btn {
+.header-modal__form-btn {
+  margin-top: 10px;
   display: flex;
   align-self: center;
   justify-self: center;
@@ -274,6 +301,10 @@
   justify-content: center;
   height: 30px;
   padding: 0 30px;
+  &:hover,
+  &:focus {
+    background: #c7133e;
+  }
 }
 .header-modal__form__btn__icon {
   margin-left: 10px;
@@ -282,7 +313,7 @@
   stroke: $primary-text-color;
 }
 
-.header__modal__close-btn {
+.header-modal__close-btn {
   position: absolute;
   top: 8px;
   right: 10px;
@@ -299,4 +330,9 @@
 .header-modal__close__icon {
   display: block;
   stroke: #333;
+  transition: stroke 250ms linear;
+  .header-modal__close-btn:hover &,
+  .header-modal__close-btn:focus & {
+    stroke: #c7133e;
+  }
 }
