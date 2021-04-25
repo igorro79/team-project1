@@ -1,9 +1,5 @@
 
-  
-
-
-
-    @media screen and (min-width: 320px) {
+   @media screen and (min-width: 320px) {
         .reviews {
             padding-top: 40px;
             padding-bottom: 40px;
@@ -15,36 +11,57 @@
           }
           
           .reviews__list {
-            display: flex;
             justify-content: center;
             padding-top: 30px;
             padding-bottom: 30px;
           }
-      
-          .reviews__quotes {
-            position: absolute;
-            left: 61px;
-            top: 28px;
-            background: transparent;
+
+          .reviews__img {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 30px;
           }
-      
-          .reviews-text {
-            display: flex;
-            position: relative;
+  
+            .reviews__text {
+              display: flex;
+              position: relative;
               justify-content: center;
               margin: 0 auto;
               width: 280px;
               background: #FAFAFA;
-          }
+              &::before {
+                content: "";
+                position: absolute;
+                top: 28px;
+                left: 61px;
+                right: 200px;
+                width: 54px;
+                height: 40px;
+                background-repeat: no-repeat;
+                background-image: url("../images/qq.svg");
+                background-size: contain;
+                background-position: center;
+              }
+            }
+
+            .reviews__style-text {
+              display: flex;
+              margin: 0 auto;
+              padding-top: 43px;
+              width: 280px;
+              height: 308px;
+              background-color: #FAFAFA;;
+            }
+          
           
           .style-text {
             display: flex;
+            margin: 0 auto;
             background-image: repeating-linear-gradient(
               180deg
               , transparent, transparent 29px, #E1E1E1 30px);
            
-             width: 157px;
-             margin: 43px;
+             width: 158px;
              font-family: $primary-font;
              font-weight: 500;
              font-size: 12px;
@@ -53,6 +70,7 @@
              letter-spacing: 0.04em;
              color: #000000;
           }
+
           .reviews-icon-list__reviews-icon-link {
             justify-content: center;
             margin: 0 auto;
@@ -65,27 +83,42 @@
           }
       
           .reviews-icon-list__name {
-            display: block;
-            padding-bottom: 22px;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            padding-top: 30px;
             font-family: $primary-font;
             font-weight: 500;
             font-size: 14px;
             line-height: 186%;
             text-align: center;
             color: #000000;
+
+            &::before{
+              content: "";
+              position: absolute;
+              top: 18px;
+              width: 32px;
+              height: 4px;
+              background-repeat: no-repeat;
+              background-image: url("../images/group.jpg");
+              background-size: contain;
+            }
           }
+
+          
 
           .reviews-icon-list__nav {
             border-radius: 50%;
             &:hover,
             &:focus {
-              color: #2196f3;
-              border: 1px solid #2196f3;
+              color: $mobile-menu-bgc;
+              border: 1px solid $mobile-menu-bgc;
               cursor: pointer;
             }
             &:hover .reviews-icon-list__home,
             &:focus .reviews-icon-list__home{
-              fill: #2196f3;
+              fill: $mobile-menu-bgc;
               cursor: pointer;
           }
           transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -94,7 +127,6 @@
           .reviews-home {
             display: flex;
             justify-content: center;
-            margin: 0 auto;
         }
       
           .reviews-icon-list__home {
@@ -115,14 +147,24 @@
         background: #FAFAFA;
     }
 
+    .reviews__style-text {
+      display: flex;
+      margin: 0 auto;
+      padding-top: 43px;
+      width: 620px;
+      height: 162px;
+      background-color: #FAFAFA;;
+    }
+  
+
     .style-text {
+      margin: 0 auto;
       display: flex;
       background-image: repeating-linear-gradient(
         180deg
         , transparent, transparent 29px, #E1E1E1 30px);
      
        width: 400px;
-       margin: 43px;
        font-family: $primary-font;
        font-weight: 500;
        font-size: 12px;
@@ -132,11 +174,26 @@
        color: #000000;
     }
 
-    .reviews__quotes {
-      position: absolute;
-      left: 83px;
-      top: 28px;
-      background: transparent;
+    .reviews__text {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      margin: 0 auto;
+      width: 620px;
+      background: #FAFAFA;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: 70px;
+        right: 200px;
+        width: 54px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-image: url("../images/qq.svg");
+        background-size: contain;
+        background-position: center;
+      }
     }
   }
 
@@ -150,14 +207,23 @@
         background: #FAFAFA;
     }
 
+    .reviews__style-text {
+      display: flex;
+      margin: 0 auto;
+      padding-top: 43px;
+      width: 926px;
+      height: 138px;
+      background-color: #FAFAFA;;
+    }
+
     .style-text {
+      margin: 0 auto;
       display: flex;
       background-image: repeating-linear-gradient(
         180deg
         , transparent, transparent 27px, #E1E1E1 28px);
      
-       width: 720px;
-       margin: 43px;
+       width: 770px;
        font-family: $primary-font;
        font-weight: 500;
        font-size: 16px;
@@ -168,22 +234,25 @@
 
     }
 
-    .reviews__quotes {
-      position: absolute;
-      left: 90px;
-      top: 28px;
-      background: transparent;
-    }
-
-    .reviews-icon-list__name {
-      display: block;
-      padding-bottom: 22px;
-      font-family: $primary-font;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 186%;
-      text-align: center;     
-      color: #000000;      
+    .reviews__text {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      margin: 0 auto;
+      width: 926px;
+      background: #FAFAFA;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: 50px;
+        right: 200px;
+        width: 54px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-image: url("../images/qq.svg");
+        background-size: contain;
+        background-position: center;
+      }
     }
   }
-  
