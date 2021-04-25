@@ -58,17 +58,25 @@
   height: 100vh;
   width: 100vw;
   background: hsla(345, 100%, 86%, 0.6);
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
+
+  .page-header.header__modal-open & {
+    opacity: 1;
+    pointer-events: initial;
+    transition: opacity 250ms linear;
+  }
 }
 
 // styyles till 1280px
 
 @media screen and (max-width: 1279px) {
-  .page-header.menu-open .header__backdrop {
-    opacity: 1;
-    pointer-events: initial;
-    transition: opacity 250ms linear;
+  .header__backdrop {
+    .page-header.menu-open & {
+      opacity: 1;
+      pointer-events: initial;
+      transition: opacity 250ms linear;
+    }
   }
 
   .menu {
@@ -196,4 +204,92 @@
   .nav__link {
     @include font(16px, bold, 1.31);
   }
+}
+
+// HEADER MODAL WINDOW
+
+.header-modal {
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 280px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: scroll;
+}
+
+.header-modal__form {
+  margin-top: 10px;
+  display: grid;
+  row-gap: 5px;
+}
+.header-modal__label {
+}
+.header-modal__description {
+  display: block;
+  margin-bottom: 4px;
+  @include font(14px, normal, 1.15);
+}
+.header-modal__input {
+  display: block;
+  padding: 5px;
+  height: 30px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+.header-modal__textarea {
+  display: block;
+  resize: none;
+  height: 80px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+.header-modal__agreement {
+  display: flex;
+  align-items: center;
+}
+.header-modal__checkbox-thumb {
+  margin-right: 4px;
+  display: block;
+  height: 14px;
+  width: 14px;
+  background: #eee;
+}
+.header__modal-checkbox__text {
+  display: block;
+  @include font(12px, normal, 1.15);
+}
+.header__modal__form-btn {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 30px;
+}
+
+.header__modal__close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 4px;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+  background: transparent;
+}
+.header-modal__close__icon {
+  display: block;
+  stroke: #333;
 }
