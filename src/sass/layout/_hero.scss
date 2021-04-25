@@ -82,8 +82,8 @@
 .hero__round {
   position: absolute;
   z-index: 1;
-  top: 83px;
   right: -62px;
+  bottom: 75px;
   width: 346px;
   height: 344px;
   border-radius: 50%;
@@ -121,7 +121,7 @@
     width: 180px;
   }
   .page__title {
-    @include font(22px, normal, 1.14);
+    @include font(22px, normal, 1.13);
 
     &--big {
       @include font(34px, normal, 0.9);
@@ -184,10 +184,10 @@
     }
   }
   .hero__round {
+    right: 137px;
+    bottom: 48px;
     height: 322px;
     width: 324px;
-    top: 31px;
-    right: 137px;
   }
 
   .hero__icecream {
