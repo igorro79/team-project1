@@ -2,12 +2,19 @@
   margin-bottom: 100px;
 }
 .slider .slick-dots {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
 }
+
 .slider .slick-dots li {
   list-style: none;
+  display: flex;
+  align-items: center;
   margin-right: 10px;
 }
 .slider .slick-dots button {
@@ -20,10 +27,12 @@
 }
 .slider .slick-dots li.slick-active {
   background-image: url(../images/reviews/slick-home.svg);
-  border-radius: 0;
-  width: 12.5px;
-  height: 12.5px;
+  //   border-radius: 0;
+  width: 12px;
+  height: 12px;
+  background-position: left bottom;
+  padding: 0;
 }
-.slider .slick-dots li.slick-active .slider .slick-dots button {
-  display: none;
+li.slick-active > button {
+  background-color: transparent;
 }
