@@ -1,33 +1,26 @@
 .page-footer {
   top: 0;
   left: 0;
-  background-color: rgba(255, 245, 246, 1);
+  background-color: $secondary-bgc;
   min-width: 100%;
 }
 .footer-container {
   padding: 15px;
-  display: flex;
   display: block;
   @media screen and (min-width: 768px) {
     position: relative;
-    @media screen and (min-width: 768px) {
-      padding: 9px;
-    }
+    padding: 9px;
   }
-  // background-color: rgba(255, 245, 246, 1);
-
-  // padding-left: 22px;
-  // padding-top: 0;
-
-  @media screen and (min-width: screen) {
+  @media screen and (min-width: 1700px) {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
+// ========ЗАГЛАВИЕ ПОДВАЛА
 .footer-text {
-  font-family: Titan One;
+  font-family: $accent-font;
   font-style: 400;
-  font-weight: normal;
   text-transform: uppercase;
   margin: 0;
 }
@@ -41,7 +34,7 @@
     line-height: 21px;
     letter-spacing: 1.21;
 
-    color: #ffa5ba;
+    color: $third-accent-color;
     margin-bottom: 16px;
   }
   .footer-text__title {
@@ -49,9 +42,11 @@
     line-height: 39px;
     letter-spacing: 1.15;
 
-    color: #d41443;
+    color: $secondary-accent-color;
   }
 }
+
+// =======СОЦИАЛКА ПОДВАЛА
 .footer-social {
   display: inline;
 }
@@ -64,28 +59,30 @@
   // justify-content: space-between;
 }
 .footer-social__icon {
-  background-color: rgba(254, 165, 187, 1);
+  background-color: $third-accent-color;
   border-radius: 50%;
   padding: 6px;
   &:hover,
   &:focus {
-    background-color: rgba(212, 20, 67, 1);
+    background-color: $secondary-hover-bgc;
+    transition: transform 250ms;
   }
 }
 .footer-social__item {
   padding-left: 20px;
 }
 .footer-social__link {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
     margin: 0;
     top: 10px;
     right: 15px;
   }
 }
-.footer-kontact {
-  font-family: DM Sans;
-  font-style: normal;
+
+// ======ТЕЛЕФОН ПОДВАЛА
+.footer-contact {
+  font-family: $primary-font;
   font-weight: 700;
   font-size: 12px;
   line-height: 22px;
@@ -100,18 +97,20 @@
     right: 15px;
   }
 }
-.footer-kontact__tlf {
-  color: #d41443;
+.footer-contact__tlf {
+  color: $secondary-accent-color;
 }
-.footer-kontact__tlf-text {
-  color: #000000;
+.footer-contact__tlf-text {
+  color: $default-text-color;
 }
+
+// ==== ЛИНИЯ ПОДВАЛА
 .brand-box {
-  @media screen and (min-width: 280px) {
-    border-top: 1px solid #e1e1e1;
-    margin-top: 43px;
-  }
+  border-top: 1px solid $page-line-color;
+  margin-top: 43px;
 }
+
+// ====== ТЕКСТ ТМ ПОДВАЛА
 .brand-box__text {
   @media screen and (max-width: 768px) {
     width: 150px;
@@ -119,16 +118,22 @@
   }
 }
 .brand-box__text {
-  font-family: DM Sans;
-  font-style: normal;
+  font-family: $primary-font;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 1.5;
   text-align: center;
 
-  color: #907e82;
-  background-color: #fff5f6;
-
-  margin: 22px auto;
+  color: $secondary-text-color;
+  background-color: $secondary-bgc;
+  @media screen and (max-width: 768px) {
+    margin: 22px auto 25px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    margin: 29px auto 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 9px auto 10px;
+  }
 }
