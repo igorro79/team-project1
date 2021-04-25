@@ -209,16 +209,16 @@
 // HEADER MODAL WINDOW
 
 .header-modal {
-  padding: 20px;
+  padding: 30px 20px 30px 20px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  width: 280px;
+  max-height: 95vh;
+  width: 290px;
   background: #fff;
   border-radius: 8px;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .header-modal__form {
@@ -226,8 +226,8 @@
   display: grid;
   row-gap: 5px;
 }
-.header-modal__label {
-}
+// .header-modal__label {
+// }
 .header-modal__description {
   display: block;
   margin-bottom: 4px;
@@ -275,11 +275,17 @@
   height: 30px;
   padding: 0 30px;
 }
+.header-modal__form__btn__icon {
+  margin-left: 10px;
+  height: 10px;
+  width: 6px;
+  stroke: $primary-text-color;
+}
 
 .header__modal__close-btn {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 8px;
+  right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -289,6 +295,7 @@
   border-radius: 50%;
   background: transparent;
 }
+
 .header-modal__close__icon {
   display: block;
   stroke: #333;
