@@ -97,10 +97,10 @@
   bottom: 0;
   width: 171px;
   height: 410px;
-  background-image: url(/images/hero-header/hero-icecream@1x.png);
+  background-image: url(/images/hero-header/mobile-icecream@1x.png);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/hero-header/hero-icecream@2x.png);
+    background-image: url(/images/hero-header/mobile-icecream@2x.png);
   }
 }
 
@@ -194,6 +194,11 @@
     height: 336px;
     width: 143px;
     right: 247px;
+    background-image: url(/images/hero-header/tablet-icecream@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/hero-header/tablet-icecream@2x.png);
+    }
   }
 
   .hero__milk {
@@ -203,10 +208,10 @@
     bottom: 28px;
     height: 126px;
     width: 124px;
-    background-image: url(/images/hero-header/hero-milk@1x.png);
+    background-image: url(/images/hero-header/tablet-milk@1x.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/hero-header/hero-milk@2x.png);
+      background-image: url(/images/hero-header/tablet-milk@2x.png);
     }
   }
 
@@ -217,10 +222,10 @@
     bottom: 0;
     height: 133px;
     width: 168px;
-    background-image: url(/images/hero-header/hero-girl@1x.png);
+    background-image: url(/images/hero-header/tablet-girl@1x.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/hero-header/hero-girl@2x.png);
+      background-image: url(/images/hero-header/tablet-girl@2x.png);
     }
   }
 }

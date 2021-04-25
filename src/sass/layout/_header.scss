@@ -46,7 +46,7 @@
   background: $mobile-menu-bgc;
   opacity: 0;
   transform: translateX(100%);
-  transition: transform 250ms linear, opacity 250ms linear;
+  transition: transform 250ms linear;
 
   .page-header.menu-open & {
     opacity: 1;
