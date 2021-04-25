@@ -18,3 +18,12 @@
   color: $slider-dots;
   border: none;
 }
+.slider .slick-dots li.slick-active {
+  background-image: url(../images/reviews/slick-home.svg);
+  border-radius: 0;
+  width: 12.5px;
+  height: 12.5px;
+}
+.slider .slick-dots li.slick-active .slider .slick-dots button {
+  display: none;
+}
