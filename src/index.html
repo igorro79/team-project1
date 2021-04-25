@@ -24,7 +24,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <!-- Animations Animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
   </head>
@@ -41,26 +44,17 @@
     <include src="./partials/header-modal.html"></include>
     <include src="./partials/modal.html"></include>
 
-    <!-- =============тест для слайдера============ -->
-
-    <div class="container">
-      <div class="slider">
-        <div class="pics"><img src="images/gallery/desktop/pic1.jpg" alt="" /></div>
-        <div class="pics"><img src="images/gallery/desktop/pic2.jpg" alt="" /></div>
-        <div class="pics"><img src="images/gallery/desktop/pic3.jpg" alt="" /></div>
-      </div>
-    </div>
-
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script>
+
+    <!-- <script>
       $(function () {
-        $('.slider').slick({
+        $('reviews__list').slick({
           infinite: true,
           dots: true,
           arrows: false,
         });
       });
-    </script>
+    </script> -->
 
     <script src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
