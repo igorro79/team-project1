@@ -1,19 +1,22 @@
 .page-footer {
   top: 0;
   left: 0;
+  background-color: rgba(255, 245, 246, 1);
   min-width: 100%;
 }
 .footer-container {
   padding: 15px;
   display: flex;
+  display: block;
   background-color: rgba(255, 245, 246, 1);
-  padding-left: 22px;
-  padding-top: 0;
 
-  @media screen and (min-width: 768px) {
+  // padding-left: 22px;
+  // padding-top: 0;
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    // align-items: center;
   }
   .footer-container {
     @media screen and (min-width: 1200px) {
@@ -22,13 +25,89 @@
     }
   }
 }
-.footer-text__label {
+.footer-text {
   font-family: Titan One;
   font-style: 400;
   font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+.footer-text {
+  width: 234px;
+  height: 135px;
+}
+.footer-text__label {
   font-size: 18px;
   line-height: 21px;
-  text-transform: uppercase;
+  letter-spacing: 1.21;
 
   color: #ffa5ba;
+}
+.footer-text__title {
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 1.15;
+  margin: 0;
+
+  color: #d41443;
+}
+.footer-social {
+  display: inline;
+}
+.footer-social__link {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: auto;
+  text-align: right;
+  // justify-content: space-between;
+}
+.footer-social__icon {
+  background-color: rgba(254, 165, 187, 1);
+  border-radius: 50%;
+  padding: 6px;
+}
+.footer-social__item {
+  padding-left: 20px;
+}
+.footer-kontact {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 1.86;
+
+  margin-top: 46px;
+  text-align: right;
+}
+.footer-kontact__tlf {
+  color: #d41443;
+}
+.footer-kontact__tlf-text {
+  color: #000000;
+}
+.brand-box {
+  @media screen and (max-width: 1500px) {
+    border-top: 1px solid #e1e1e1;
+    margin-top: 43px;
+  }
+}
+.brand-box__text {
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    height: 42px;
+  }
+}
+.brand-box__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1.5;
+  text-align: center;
+
+  color: #907e82;
+
+  margin: 22px auto;
 }
