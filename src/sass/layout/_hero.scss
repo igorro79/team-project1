@@ -175,14 +175,21 @@
   .hero__link {
     margin-top: 7px;
     display: block;
-    height: 18px;
     width: 18px;
-    background-image: url(/images/hero-header/hero-arrow-right@1x.png);
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/hero-header/hero-arrow-right@2x.png);
+    border-radius: 50%;
+    border-radius: 50%;
+    transition: box-shadow 250ms linear;
+    &:hover,
+    &:focus {
+      box-shadow: 0 0px 10px #c7133db0;
     }
   }
+  .hero__link-icon {
+    display: block;
+    height: 18px;
+    width: 18px;
+  }
+
   .hero__round {
     right: 137px;
     bottom: 48px;
@@ -301,6 +308,9 @@
   }
   .hero__link {
     margin-top: 20px;
+    width: 26px;
+  }
+  .hero__link-icon {
     height: 26px;
     width: 26px;
   }
