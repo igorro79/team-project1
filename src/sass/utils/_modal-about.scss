@@ -1,12 +1,18 @@
-// .backdrop {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: rgba(0, 0, 0, 0.2);
-//   transition: all 250ms linear;
-// }
+.backdrop-about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 250ms linear;
+}
+
+.is-hidden-about {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .modal-about__close-btn {
   position: absolute;
@@ -42,12 +48,6 @@
   margin-bottom: 18px;
   margin-top: 5px;
 }
-
-// .is-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
 
 .modal-about__text-item:first-child {
   @media screen and (max-width: 1279px) {
