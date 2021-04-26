@@ -152,14 +152,14 @@
   @media screen and (min-width: 768px) {
     top: -5px;
     max-width: 460px;
-    padding: 32px 15px 0;
+    padding: 32px 0px 15px;
     @include font(14px, 500, 1.86);
     letter-spacing: 0.04em;
   }
   @media screen and (min-width: 1280px) {
     top: -12px;
     max-width: 850px;
-    padding: 32px 40px 0;
+    padding: 32px 37px 15px;
     @include font(16px, 500, 2.55);
     letter-spacing: 0.04em;
   }
