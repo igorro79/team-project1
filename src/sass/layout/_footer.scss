@@ -104,10 +104,14 @@
 .brand-box {
   border-top: 1px solid $page-line-color;
   margin-top: 43px;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1179px) {
     margin-top: 91px;
   }
+<<<<<<< Updated upstream
   @media screen and (max-width: 1280px) {
+=======
+  @media screen and (min-width: 1280px) {
+>>>>>>> Stashed changes
     margin-top: 97px;
   }
 }
@@ -132,7 +136,7 @@
   @media screen and (max-width: 768px) {
     margin: 22px auto 25px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1179px) {
     margin: 29px auto 18px;
   }
   @media screen and (min-width: 1280px) {
