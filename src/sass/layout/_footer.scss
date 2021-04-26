@@ -11,10 +11,6 @@
     position: relative;
     padding: 9px;
   }
-  @media screen and (min-width: 1700px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 // ========ЗАГЛАВИЕ ПОДВАЛА
@@ -25,7 +21,7 @@
   margin: 0;
 }
 .footer-text {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1280px) {
     width: 234px;
     height: 135px;
   }
@@ -88,7 +84,7 @@
   line-height: 22px;
   letter-spacing: 1.86;
   text-align: right;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     margin-top: 46px;
   }
   @media screen and (min-width: 768px) {
@@ -108,6 +104,12 @@
 .brand-box {
   border-top: 1px solid $page-line-color;
   margin-top: 43px;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    margin-top: 91px;
+  }
+  @media screen and (mix-width: 1280px) {
+    margin-top: 97px;
+  }
 }
 
 // ====== ТЕКСТ ТМ ПОДВАЛА
@@ -130,10 +132,10 @@
   @media screen and (max-width: 768px) {
     margin: 22px auto 25px;
   }
-  @media screen and (min-width: 769px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     margin: 29px auto 18px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin: 9px auto 10px;
   }
 }
