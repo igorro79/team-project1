@@ -1,7 +1,4 @@
-.slider {
-  margin-bottom: 100px;
-}
-.slider .slick-dots {
+.reviews__list .slick-dots {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -11,13 +8,13 @@
   }
 }
 
-.slider .slick-dots li {
+.reviews__list .slick-dots li {
   list-style: none;
   display: flex;
   align-items: center;
   margin-right: 10px;
 }
-.slider .slick-dots button {
+.reviews__list .slick-dots button {
   font-size: 0%;
   width: 12px;
   height: 12px;
@@ -25,7 +22,7 @@
   color: $slider-dots;
   border: none;
 }
-.slider .slick-dots li.slick-active {
+.reviews__list .slick-dots li.slick-active {
   background-image: url(../images/reviews/slick-home.svg);
   //   border-radius: 0;
   width: 12px;
@@ -36,3 +33,10 @@
 li.slick-active > button {
   background-color: transparent;
 }
+
+// .reviews__item {
+//   opacity: 0;
+// }
+// .slick-active .reviews__item {
+//   opacity: 1;
+// }
