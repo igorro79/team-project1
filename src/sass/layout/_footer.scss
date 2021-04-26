@@ -1,60 +1,53 @@
 .page-footer {
   top: 0;
   left: 0;
-  background-color: rgba(255, 245, 246, 1);
+  background-color: $secondary-bgc;
   min-width: 100%;
 }
 .footer-container {
   padding: 15px;
-  display: flex;
   display: block;
-  background-color: rgba(255, 245, 246, 1);
-
-  // padding-left: 22px;
-  // padding-top: 0;
-
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    // align-items: center;
-  }
-  .footer-container {
-    @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
-      padding-left: 66px;
-    }
+  @media screen and (min-width: 768px) {
+    position: relative;
+    padding: 9px;
   }
 }
+
+// ========ЗАГЛАВИЕ ПОДВАЛА
 .footer-text {
-  font-family: Titan One;
+  font-family: $accent-font;
   font-style: 400;
-  font-weight: normal;
   text-transform: uppercase;
   margin: 0;
 }
 .footer-text {
-  width: 234px;
-  height: 135px;
-}
-.footer-text__label {
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 1.21;
+  @media screen and (max-width: 1280px) {
+    width: 234px;
+    height: 135px;
+  }
+  .footer-text__label {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1.21;
 
-  color: #ffa5ba;
-}
-.footer-text__title {
-  font-size: 34px;
-  line-height: 39px;
-  letter-spacing: 1.15;
-  margin: 0;
+    color: $third-accent-color;
+    margin-bottom: 16px;
+  }
+  .footer-text__title {
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 1.15;
 
-  color: #d41443;
+    color: $secondary-accent-color;
+  }
 }
+
+// =======СОЦИАЛКА ПОДВАЛА
 .footer-social {
   display: inline;
 }
 .footer-social__link {
+  margin-top: 43px;
   display: flex;
   justify-content: flex-end;
   margin-right: auto;
@@ -62,36 +55,64 @@
   // justify-content: space-between;
 }
 .footer-social__icon {
-  background-color: rgba(254, 165, 187, 1);
+  background-color: $third-accent-color;
   border-radius: 50%;
   padding: 6px;
+  &:hover,
+  &:focus {
+    background-color: $secondary-hover-bgc;
+    transition: transform 250ms;
+  }
 }
 .footer-social__item {
   padding-left: 20px;
 }
-.footer-kontact {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
+.footer-social__link {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+// ======ТЕЛЕФОН ПОДВАЛА
+.footer-contact {
+  font-family: $primary-font;
+  font-weight: 700;
   font-size: 12px;
   line-height: 22px;
   letter-spacing: 1.86;
-
-  margin-top: 46px;
   text-align: right;
-}
-.footer-kontact__tlf {
-  color: #d41443;
-}
-.footer-kontact__tlf-text {
-  color: #000000;
-}
-.brand-box {
-  @media screen and (max-width: 1500px) {
-    border-top: 1px solid #e1e1e1;
-    margin-top: 43px;
+  @media screen and (max-width: 768px) {
+    margin-top: 46px;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 70px;
+    right: 15px;
   }
 }
+.footer-contact__tlf {
+  color: $secondary-accent-color;
+}
+.footer-contact__tlf-text {
+  color: $default-text-color;
+}
+
+// ==== ЛИНИЯ ПОДВАЛА
+.brand-box {
+  border-top: 1px solid $page-line-color;
+  margin-top: 43px;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    margin-top: 91px;
+  }
+  @media screen and (mix-width: 1280px) {
+    margin-top: 97px;
+  }
+}
+
+// ====== ТЕКСТ ТМ ПОДВАЛА
 .brand-box__text {
   @media screen and (max-width: 768px) {
     width: 150px;
@@ -99,15 +120,22 @@
   }
 }
 .brand-box__text {
-  font-family: DM Sans;
-  font-style: normal;
+  font-family: $primary-font;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 1.5;
   text-align: center;
 
-  color: #907e82;
-
-  margin: 22px auto;
+  color: $secondary-text-color;
+  background-color: $secondary-bgc;
+  @media screen and (max-width: 768px) {
+    margin: 22px auto 25px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    margin: 29px auto 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 9px auto 10px;
+  }
 }
