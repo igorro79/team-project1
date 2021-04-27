@@ -8,6 +8,7 @@
   padding-top: 80px;
   @media screen and (min-width: 768px) {
     position: relative;
+    // padding-bottom: 10px;
   }
 }
 
@@ -88,7 +89,7 @@
   line-height: 22px;
   letter-spacing: 1.86;
   text-align: right;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-top: 46px;
   }
   @media screen and (min-width: 768px) {
@@ -113,7 +114,7 @@
 .brand-box {
   border-top: 1px solid $page-line-color;
   margin-top: 43px;
-  @media screen and (min-width: 768px) and (max-width: 1179px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-top: 91px;
   }
   @media screen and (min-width: 1280px) {
@@ -122,12 +123,6 @@
 }
 
 // ====== ТЕКСТ ТМ ПОДВАЛА
-.brand-box__text {
-  @media screen and (max-width: 768px) {
-    width: 150px;
-    height: 42px;
-  }
-}
 .brand-box__text {
   font-family: $primary-font;
   font-weight: 700;
@@ -138,13 +133,17 @@
 
   color: $secondary-text-color;
   background-color: $secondary-bgc;
-  @media screen and (max-width: 768px) {
-    margin: 22px auto 25px;
+  @media screen and (max-width: 767px) {
+    width: 140px;
+    margin: 22px auto 0;
+    padding-bottom: 25px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1179px) {
-    margin: 29px auto 18px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin: 29px auto 0;
+    padding-bottom: 18px;
   }
   @media screen and (min-width: 1280px) {
-    margin: 9px auto 10px;
+    margin: 9px auto 0;
+    padding-bottom: 10px;
   }
 }

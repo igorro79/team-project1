@@ -1,12 +1,12 @@
 .hero {
   background: $primary-accent-color;
   overflow: hidden;
+  padding-top: 193px;
+  padding-bottom: 160px;
 }
 
 .hero__container {
   position: relative;
-  padding-top: 193px;
-  padding-bottom: 160px;
 }
 
 .hero__thumb {
@@ -48,7 +48,7 @@
   }
 }
 .hero__btns {
-  margin-top: 19px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -82,8 +82,8 @@
 .hero__round {
   position: absolute;
   z-index: 1;
+  top: -110px;
   right: -62px;
-  bottom: 75px;
   width: 346px;
   height: 344px;
   border-radius: 50%;
@@ -93,8 +93,8 @@
 .hero__icecream {
   position: absolute;
   z-index: 2;
+  top: -101px;
   right: 32px;
-  bottom: 0;
   width: 171px;
   height: 410px;
   background-image: url(/images/hero-header/mobile-icecream@1x.png);
@@ -107,7 +107,7 @@
 // for tablet
 
 @media screen and (min-width: 768px) {
-  .hero__container {
+  .hero {
     padding-top: 102px;
     padding-bottom: 34px;
   }
@@ -131,9 +131,9 @@
     margin-top: 20px;
   }
 
-  .hero__list {
-    margin-right: 8px;
-  }
+  // .hero__list {
+  //   margin-right: 8px;
+  // }
 
   .hero__item {
     @include font(8px, normal, 1.25);
@@ -191,8 +191,9 @@
   }
 
   .hero__round {
-    right: 137px;
-    bottom: 48px;
+    top: -71px;
+    right: 103px;
+    // right: 137px;
     height: 322px;
     width: 324px;
   }
@@ -200,6 +201,7 @@
   .hero__icecream {
     height: 336px;
     width: 143px;
+    top: -39px;
     right: 247px;
     background-image: url(/images/hero-header/tablet-icecream@1x.png);
 
@@ -211,8 +213,9 @@
   .hero__milk {
     position: absolute;
     z-index: 1;
-    left: 34px;
-    bottom: 28px;
+    left: 0;
+    // left: 34px;
+    bottom: 0;
     height: 126px;
     width: 124px;
     background-image: url(/images/hero-header/tablet-milk@1x.png);
@@ -225,8 +228,9 @@
   .hero__girl {
     position: absolute;
     z-index: 1;
-    right: 34px;
-    bottom: 0;
+    right: 0;
+    // right: 34px;
+    bottom: -34px;
     height: 133px;
     width: 168px;
     background-image: url(/images/hero-header/tablet-girl@1x.png);
@@ -240,12 +244,14 @@
 //for desktop
 
 @media screen and (min-width: 1280px) {
-  .hero__container {
+  .hero {
     padding-top: 171px;
     padding-bottom: 58px;
-    padding-left: 115px;
-    padding-right: 97px;
   }
+  // .hero__container {
+  //   padding-left: 115px;
+  //   padding-right: 97px;
+  // }
   .hero__cell--left {
     width: 277px;
   }
@@ -277,9 +283,9 @@
     }
   }
 
-  .hero__list {
-    margin-right: 18px;
-  }
+  // .hero__list {
+  //   margin-right: 18px;
+  // }
 
   .hero__item {
     @include font(14px, normal, 1.28);
@@ -316,16 +322,20 @@
   }
 
   .hero__round {
-    right: 267px;
-    bottom: 75px;
+    top: -121px;
+    right: 152px;
+    // right: 267px;
     height: 538px;
     width: 538px;
   }
 
   .hero__icecream {
+    top: -63px;
+    right: 335px;
+    // right: 450px;
     height: 557px;
     width: 236px;
-    right: 450px;
+
     background-image: url(/images/hero-header/hero-icecream@1x.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -334,8 +344,10 @@
   }
 
   .hero__milk {
-    left: 77px;
-    bottom: 45px;
+    left: 0;
+    // left: 77px;
+    bottom: 0;
+    // bottom: 45px;
     height: 191px;
     width: 188px;
     background-image: url(/images/hero-header/hero-milk@1x.png);
@@ -346,7 +358,9 @@
   }
 
   .hero__girl {
-    right: 109px;
+    right: 0;
+    bottom: -58px;
+    // right: 109px;
     height: 232px;
     width: 293px;
     background-image: url(/images/hero-header/hero-girl@1x.png);
