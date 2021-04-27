@@ -1,14 +1,56 @@
 .gallery {
-  background-image: linear-gradient(
-    to bottom,
-    $secondary-bgc 40%,
-    $primary-bgc 40%,
-    $primary-bgc 100%
-  );
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+      to bottom,
+      $secondary-bgc 44.5%,
+      $primary-bgc 44.5%,
+      $primary-bgc 100%
+    );
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      $secondary-bgc 44.8%,
+      $primary-bgc 44.8%,
+      $primary-bgc 100%
+    );
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+      to bottom,
+      $secondary-bgc 43%,
+      $primary-bgc 43%,
+      $primary-bgc 100%
+    );
+  }
+}
+.gallery {
+  padding-top: 46px;
+  padding-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
 }
 .gallery__container {
-  padding-top: 70px;
-  padding-bottom: 60px;
+  max-width: 480px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
 }
 
 .gallery__descktop {
@@ -17,9 +59,13 @@
   }
   width: 1010px;
   height: 430px;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery__mobile {
@@ -31,11 +77,7 @@
 .gallery__thumb {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-
-  &:not(:last-child) {
-    margin-right: 6px;
-  }
+  justify-content: center;
   height: 100%;
 }
 
@@ -43,36 +85,22 @@
   @media screen and (min-width: 1280px) {
     border-radius: 21px;
     transition: transform 250ms ease-out, box-shadow 250ms ease-out;
-
     &:hover {
       transform: scale(1.2);
       box-shadow: 0px 0px 10px 2px $secondary-accent-color;
     }
   }
+
   &--bottom {
     margin-bottom: 6px;
   }
-  &--top-one {
-    margin-top: 142px;
-  }
-
   &--top-two {
-    margin-top: 86px;
+    margin-top: 43px;
   }
-
   &--top-four {
-    margin-top: 98px;
+    margin-top: 49px;
   }
-
   &--top-five {
-    margin-top: 55px;
+    margin-top: -55px;
   }
-
-  &--top-six {
-    margin-top: 150px;
-  }
-}
-
-.gallery__image--bigger {
-  width: 285px;
 }

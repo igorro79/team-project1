@@ -17,6 +17,7 @@
   border-radius: 20px;
   font-family: inherit;
   @include font(16px, bold, 1.31);
+  transition: background 250ms linear;
   //.btn--main
   &--main {
     background: $primary-bgc;

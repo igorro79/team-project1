@@ -1,10 +1,155 @@
 .page-footer {
   top: 0;
   left: 0;
+  background-color: $secondary-bgc;
   min-width: 100%;
 }
 .footer-container {
-  padding: 15px;
+  padding-top: 80px;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    // padding-bottom: 10px;
+  }
+}
+
+// ========ЗАГЛАВИЕ ПОДВАЛА
+.footer-text {
+  font-family: $accent-font;
+  font-style: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+.footer-text {
+  @media screen and (max-width: 1280px) {
+    width: 234px;
+    height: 135px;
+  }
+  .footer-text__label {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1.21;
+
+    color: $third-accent-color;
+    margin-bottom: 16px;
+  }
+  .footer-text__title {
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 1.15;
+
+    color: $secondary-accent-color;
+  }
+}
+
+// =======СОЦИАЛКА ПОДВАЛА
+.footer-social {
+  display: inline;
+}
+.footer-social__link {
+  margin-top: 43px;
   display: flex;
-  background-color: rgba(255, 245, 246, 1);
+  justify-content: flex-end;
+  margin-right: auto;
+  text-align: right;
+  // justify-content: space-between;
+}
+.footer-social__icon {
+  background-color: $third-accent-color;
+  border-radius: 50%;
+  padding: 6px;
+  &:hover,
+  &:focus {
+    background-color: $secondary-hover-bgc;
+    transition: transform 250ms;
+  }
+}
+.footer-social__item {
+  padding-left: 20px;
+}
+.footer-social__link {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    margin: 0;
+    top: 80px;
+    right: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    margin: 0;
+    top: 80px;
+    right: 25px;
+  }
+}
+
+// ======ТЕЛЕФОН ПОДВАЛА
+.footer-contact {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 1.86;
+  text-align: right;
+  @media screen and (max-width: 768px) {
+    margin-top: 46px;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 140px;
+    right: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 140px;
+    right: 25px;
+  }
+}
+.footer-contact__tlf {
+  color: $secondary-accent-color;
+}
+.footer-contact__tlf-text {
+  color: $default-text-color;
+}
+
+// ==== ЛИНИЯ ПОДВАЛА
+.brand-box {
+  border-top: 1px solid $page-line-color;
+  margin-top: 43px;
+  @media screen and (min-width: 768px) and (max-width: 1179px) {
+    margin-top: 91px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 97px;
+  }
+}
+
+// ====== ТЕКСТ ТМ ПОДВАЛА
+.brand-box__text {
+  @media screen and (max-width: 768px) {
+    width: 140px;
+    // padding-left: 91px;
+    // padding-right: 91px;
+  }
+}
+.brand-box__text {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1.5;
+  text-align: center;
+
+  color: $secondary-text-color;
+  background-color: $secondary-bgc;
+  @media screen and (max-width: 768px) {
+    margin: 22px auto 0;
+    padding-bottom: 25px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1179px) {
+    margin: 29px auto 0;
+    padding-bottom: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 9px auto 0;
+    padding-bottom: 10px;
+  }
 }

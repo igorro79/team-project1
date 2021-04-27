@@ -3,10 +3,13 @@ body {
   color: $default-text-color;
   background-color: $primary-bgc;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1279px) {
     &.menu-open {
       overflow: hidden;
     }
+  }
+  &.header-modal-open {
+    overflow: hidden;
   }
 }
 
