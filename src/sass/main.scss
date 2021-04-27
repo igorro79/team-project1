@@ -2,6 +2,7 @@
 @import './utils/visually-hidden';
 @import './utils/slider';
 @import './base/common';
+@import './base/section';
 @import './base/container';
 @import './base/button'; //for common styles for page buttons @RomanKruk
 
@@ -19,4 +20,6 @@
 @import './utils/modal-about';
 
 @import './layout/header-modal';
+
+@import './utils/modal-map';
 

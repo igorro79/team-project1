@@ -10,7 +10,8 @@
 }
 .modal {
   z-index: 20;
-  width: 450px;
+  max-width: 450px;
+  width: 90%;
   height: auto;
   padding: 40px;
   position: absolute;
