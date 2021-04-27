@@ -14,8 +14,7 @@
 }
 
 .nav__link {
-  display: flex;
-  align-items: center;
+  display: block;
   @include font(14px, bold, 1.29);
   color: $primary-text-color;
   transition: color 250ms linear;
@@ -113,13 +112,17 @@
 
   .nav__item {
     padding-left: 15px;
-    border-top: 1px solid $mobile-menu-line-color;
-    &:last-child {
-      border-bottom: 1px solid $mobile-menu-line-color;
+    &:nth-child(2n + 1) {
+      border: 1px solid $mobile-menu-line-color;
     }
   }
   .nav__link {
-    height: 42px;
+    .nav__item:nth-child(2n + 1) {
+      padding: 11px 0;
+    }
+    .nav__item:nth-child(2n) {
+      padding: 12px 0;
+    }
   }
 
   .close__btn {
@@ -201,6 +204,7 @@
     gap: 35px;
   }
   .nav__link {
+    padding: 15px 0;
     @include font(16px, bold, 1.31);
   }
 }
