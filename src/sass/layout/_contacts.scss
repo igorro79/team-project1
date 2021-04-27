@@ -64,6 +64,7 @@
   color: $secondary-text-color;
 }
 .contacts__list-button {
+  display: inline-block;
   min-width: 80px;
   background: $product-one-color;
   border-radius: 4px;
@@ -79,6 +80,7 @@
   color: $primary-text-color;
   margin-bottom: 25px;
   @media screen and (min-width: 768px) {
+    min-width: 73px;
     font-size: 16px;
     line-height: 1.87;
   }
