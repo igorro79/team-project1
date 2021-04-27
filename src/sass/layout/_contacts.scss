@@ -224,6 +224,23 @@
   padding: 8px 20px 8px 20px;
   border: transparent;
   border-radius: 22px;
+  min-width: 161.5px;
+  @media screen and (min-width: 768px) {
+    &.btn--secondary {
+      min-width: 191.5px;
+    }
+    &.btn--main {
+      min-width: 174px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &.btn--secondary {
+      min-width: 198px;
+    }
+    &.btn--main {
+      min-width: 180px;
+    }
+  }
 }
 .location-btn {
   margin-bottom: 10px;
