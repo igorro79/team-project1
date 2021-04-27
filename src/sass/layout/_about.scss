@@ -14,7 +14,6 @@
 
 .about__title {
   font-family: $accent-font;
-
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
@@ -216,9 +215,12 @@
     letter-spacing: 0.04em;
   }
 
+  .about__description {
+    margin-bottom: 32px;
+  }
+
   .about__description-end {
-    margin-top: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
   }
 
   .about__set {
