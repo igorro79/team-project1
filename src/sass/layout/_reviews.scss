@@ -1,17 +1,12 @@
-.reviews .container {
+.reviews {
   padding-top: 40px;
+  padding-bottom: 43px;
   @media screen and (min-width: 768px) {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-}
-.reviews__list {
-  margin-bottom: 43px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
+    padding: 60px 70px;
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 66px;
+    padding-top: 40px;
+    padding-bottom: 66px;
   }
 }
 
@@ -92,7 +87,7 @@
     height: calc(100% - 100px);
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     background-image: repeating-linear-gradient(
       to bottom,
       transparent,
@@ -102,7 +97,7 @@
     );
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     // max-height: 70px;
     min-width: calc(100% - 180px);
     height: calc(100% - 90px);
@@ -124,7 +119,7 @@
     width: 54px;
     height: 40px;
     background-repeat: no-repeat;
-    background-image: url('../images/qq.svg');
+    background-image: url('../images/reviews/qq.svg');
     background-size: contain;
     background-position: center;
     @media screen and (min-width: 768px) {
