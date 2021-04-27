@@ -52,9 +52,13 @@
   background: $primary-bgc;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  &:not(&:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 20px);
     margin-left: 20px;
@@ -226,6 +230,9 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    &__items {
+      margin-right: 15px;
+    }
   }
 }
 .contacts__but {
@@ -240,6 +247,5 @@
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
-    margin-right: 15px;
   }
 }
