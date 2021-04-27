@@ -13,7 +13,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms linear;
-  box-shadow: 0 5px 5px #c7133db0;
+  box-shadow: 0 2px 4px #c7133db0;
 
   body.header-modal-open & {
     opacity: 1;
@@ -36,7 +36,7 @@
 .header-modal__description {
   display: block;
   margin-bottom: 4px;
-  @include font(14px, normal, 1.15);
+  @include font(12px, normal, 1.15);
 }
 .header-modal__input,
 .header-modal__textarea {
@@ -82,7 +82,7 @@
 }
 .header-modal-checkbox__text {
   display: block;
-  @include font(12px, normal, 1.4);
+  @include font(12px, normal, 1.5);
 }
 
 .header__modal-checkbox__link {
@@ -137,14 +137,13 @@
 @media screen and (min-width: 480px) {
   .header-modal {
     padding: 30px;
-    width: 480px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .header-modal {
     padding: 45px 30px;
-    max-height: 90vh;
-    width: 650px;
+    width: 600px;
   }
   .header-modal__form {
     margin-top: 25px;
@@ -155,7 +154,7 @@
     @include font(18px, bold, 1.2);
   }
   .header-modal__description {
-    @include font(15px, normal, 1.2);
+    @include font(14px, normal, 1.2);
   }
   .header-modal__input {
     height: 40px;
@@ -175,7 +174,7 @@
     width: 18px;
   }
   .header-modal-checkbox__text {
-    @include font(18px, normal, 1.2);
+    @include font(16px, normal, 1.2);
   }
   .header-modal__form-btn {
     margin-top: 15px;
@@ -183,22 +182,17 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .header-modal {
-    width: 800px;
-  }
   .header-modal__title {
     @include font(22px, bold, 1.2);
   }
   .header-modal__description {
-    @include font(17px, normal, 1.2);
+    @include font(16px, normal, 1.2);
   }
   .header-modal__input {
-    height: 50px;
-    @include font(18px, normal, 1.2);
+    height: 45px;
   }
   .header-modal__textarea {
     height: 130px;
-    @include font(18px, normal, 1.2);
   }
   .header-checkbox__icon {
     height: 20px;
