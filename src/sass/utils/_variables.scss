@@ -25,9 +25,9 @@ $mobile-menu-bgc: #e17992;
 $product-one-color: #f0d1a5;
 $product-two-color: #c2e297;
 
-$unknown: #d31342;
-$unknown2: #d9d9d9;
-$unknown3: #fafafa;
+$slider-active: #d31342;
+$slider-dots: #d9d9d9;
+$slider-bgc: #fafafa;
 
 // мискины для текста
 @mixin font($fs: 16px, $fw: 500, $lh: 1.76) {
