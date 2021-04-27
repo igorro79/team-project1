@@ -1,13 +1,14 @@
 .advantages {
-  padding: 39px 0 70px 0;
+  padding-top: 39px;
+  padding-bottom: 70px;
   background-color: $secondary-bgc;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .advantages__wrapper {
     margin-bottom: 38px;
   }
-  .advantages__wrapper:nth-child(3n) {
+  .advantages__wrapper:last-child {
     margin-bottom: 0;
   }
 }
@@ -15,17 +16,20 @@
 .advantages__item--first-icon::before {
   content: url(../images/advantages/adv-icon1.png);
   display: block;
+  margin-bottom: 16px;
 }
 .advantages__item--second-icon::before {
   content: url(../images/advantages/adv-icon2.png);
   display: block;
+  margin-bottom: 16px;
 }
 .advantages__item--third-icon::before {
   content: url(../images/advantages/adv-icon3.png);
   display: block;
+  margin-bottom: 16px;
 }
 .advantages__title {
-  margin: 16px 0;
+  margin-bottom: 16px;
   font-family: $accent-font;
   font-style: normal;
   font-weight: 400;
