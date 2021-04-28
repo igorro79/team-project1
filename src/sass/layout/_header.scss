@@ -141,7 +141,10 @@
     width: 14px;
     stroke: $primary-text-color;
   }
-
+  .burger {
+    display: flex;
+    align-items: center;
+  }
   .burger__btn {
     cursor: pointer;
     padding: 0;
@@ -150,8 +153,8 @@
   }
   .burger__icon {
     display: block;
-    height: 12px;
-    width: 20px;
+    height: 18px;
+    width: 30px;
     stroke: $secondary-accent-color;
   }
 
