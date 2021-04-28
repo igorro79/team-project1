@@ -29,6 +29,9 @@
   padding-top: 42px;
   padding-bottom: 42px;
   padding-right: 20px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
   width: 220px;
   height: 427px;
   background: $primary-bgc;
@@ -126,15 +129,16 @@
 }
 .location {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   &::after {
-    top: 95px;
-    left: 0;
-    position: absolute;
+    // top: 95px;
+    // left: 0;
+    // position: absolute;
     content: '';
     display: block;
     height: 1px;
     width: 100%;
+    margin-top: 30px;
     background-color: $page-line-color;
     @media screen and (min-width: 768px) {
       top: 125px;
@@ -143,20 +147,24 @@
 }
 .work {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   &::after {
-    top: 110px;
-    left: 0;
-    position: absolute;
+    // top: 110px;
+    // left: 0;
+    // position: absolute;
     content: '';
     display: block;
     height: 1px;
     width: 100%;
+    margin-top: 30px;
     background-color: $page-line-color;
     @media screen and (min-width: 768px) {
       top: 130px;
     }
   }
+}
+.work__items:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .work__day {

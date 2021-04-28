@@ -8,7 +8,7 @@ body {
       overflow: hidden;
     }
   }
-  &.header-modal-open {
+  &.header-modal-open, &.about-modal-open {
     overflow: hidden;
   }
 }
