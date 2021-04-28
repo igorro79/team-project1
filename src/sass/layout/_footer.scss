@@ -82,13 +82,9 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     margin: 0;
-    top: 66px;
+    top: 0px;
   }
-  @media screen and (min-width: 1280px) {
-    position: absolute;
-    margin: 0;
-    top: 66px;
-  }
+
 }
 .footer-social__list {
   display: flex;
